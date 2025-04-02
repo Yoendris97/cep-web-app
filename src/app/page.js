@@ -38,6 +38,8 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      
     </div>
   )
 }

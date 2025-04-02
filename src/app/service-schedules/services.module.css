@@ -1,0 +1,48 @@
+/* services.module.css */
+
+
+/* Contenedor principal centrado vertical y horizontalmente */
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+}
+
+.servicesContainer h1{
+  margin-bottom: 20px;
+}
+
+
+/* Grid de tarjetas con una sola columna para apilarlas verticalmente */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Estilos para cada tarjeta */
+.serviceCard {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.serviceCard h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.serviceCard p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+

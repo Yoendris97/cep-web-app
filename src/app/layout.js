@@ -22,11 +22,11 @@ export default function RootLayout({ children }) {
             <nav>
               <ul>
                 <li><Link href="/">Inicio</Link></li>
-                <li><Link href="/services">Horarios</Link></li>
+                <li><Link href="/service-schedules">Horarios</Link></li>
                 <li><Link href="/announcements">Anuncios</Link></li>
-                <li><Link href="/about">Acerca</Link></li>
                 <li><Link href="/offerings">Ofrendas</Link></li>
-                <li><Link href="/contact">Contacto</Link></li>
+                <li><Link href="/contactUs">Contacto</Link></li>
+                <li><Link href="/aboutUs">CEP</Link></li>
               </ul>
             </nav>
           </div>

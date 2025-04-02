@@ -1,0 +1,87 @@
+/* Contenedor general de la página */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffffff, #e6f0ff); /* degradado blanco a azul claro */
+    padding: 20px;
+  }
+  
+  /* Título principal */
+  .title {
+    color: #003366; /* azul oscuro */
+    margin-bottom: 40px;
+  }
+  
+  /* Sección que contiene cada ventana de video/imagen */
+  .section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  /* Puedes ajustar el delay en la animación de cada sección si lo deseas */
+  .section:nth-child(odd) {
+    animation-delay: 0.2s;
+  }
+  .section:nth-child(even) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Contenedor de cada ventana multimedia (video o imagen) */
+  .mediaWindow {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto hover para dar sensación de interactividad */
+  .mediaWindow:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilo para el video o la imagen */
+  .media {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Overlay transparente con información */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* efecto transparente blanco */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #003366;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Al hacer hover, el overlay se vuelve visible */
+  .mediaWindow:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Animación de aparición */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
